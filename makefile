@@ -54,6 +54,8 @@ convert: $(MIDI_FILES) $(PDF_FILES)
 packages-apt:
 	sudo apt-get install -y abcmidi
 	sudo apt-get install -y lilypond
+	sudo apt-get install -y timidity
+	sudo apt-get install -y zathura
 
 clobber: clean
 	-rm -f *.pdf

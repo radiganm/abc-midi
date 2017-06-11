@@ -1,4 +1,22 @@
 #+TITLE: ABC MIDI conversion test files
 #+AUTHOR: Mac Radigan
+#
+#+begin_src bash :tangle ./examples.sh
+
+#!/bin/bash
+
+  ## To install prerequisites (using APT):
+  make packages-apt
+
+  ## To generate MIDI files and PDFs of musical scores, do the following:
+  make
+
+  ## To play a song (example):
+  timidity example-001.midi
+
+  ## To view a score (example):
+  zathura -x a example-001.pdf
+
+#+end_src
 
  # *EOF* 
