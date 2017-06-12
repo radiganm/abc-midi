@@ -6,39 +6,26 @@
 
 .DEFAULT_GOAL := convert
 
-MIDI_FILES =        \
-  example-001.midi  \
-  example-002.midi  \
-  example-003.midi  \
-  example-004.midi  \
-  example-005.midi  \
-  example-006.midi  \
-  example-007.midi  \
-  example-008.midi  \
-  example-009.midi  \
-  example-010.midi  \
-  example-011.midi  \
-  example-012.midi  \
-  example-013.midi  \
-  example-014.midi  \
-  example-015.midi   
+ABC_FILES =        \
+  example-001.abc  \
+  example-002.abc  \
+  example-003.abc  \
+  example-004.abc  \
+  example-005.abc  \
+  example-006.abc  \
+  example-007.abc  \
+  example-008.abc  \
+  example-009.abc  \
+  example-010.abc  \
+  example-011.abc  \
+  example-012.abc  \
+  example-013.abc  \
+  example-014.abc  \
+  example-015.abc   
 
-PDF_FILES =        \
-  example-001.pdf  \
-  example-002.pdf  \
-  example-003.pdf  \
-  example-004.pdf  \
-  example-005.pdf  \
-  example-006.pdf  \
-  example-007.pdf  \
-  example-008.pdf  \
-  example-009.pdf  \
-  example-010.pdf  \
-  example-011.pdf  \
-  example-012.pdf  \
-  example-013.pdf  \
-  example-014.pdf  \
-  example-015.pdf   
+MIDI_FILES = $(ABC_FILES:.abc=.midi)
+
+PDF_FILES = $(ABC_FILES:.abc=.pdf)
 
 convert: $(MIDI_FILES) $(PDF_FILES)
 
